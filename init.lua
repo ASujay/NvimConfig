@@ -19,7 +19,6 @@ function SetScheme()
 end
 SetScheme()
 
-
 vim.cmd [[packadd packer.nvim]]
 require('packer').startup(function(use)
 	-- Packer install
@@ -48,10 +47,15 @@ require('packer').startup(function(use)
 	use 'mfussenegger/nvim-dap'
 
 	use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
+    use 'williamboman/mason-lspconfig.nvim'
   	use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-nvim-lua'
   	use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
   	use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
   	use 'L3MON4D3/LuaSnip' -- Snippets plugin
+    use 'rafamadriz/friendly-snippets'
 
 	-- lualine
 	use {
