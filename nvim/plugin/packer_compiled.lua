@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/asujay/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?.lua;/home/asujay/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?/init.lua;/home/asujay/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?.lua;/home/asujay/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/asujay/.cache/nvim/packer_hererocks/2.1.1713484068/lib/lua/5.1/?.so"
+local package_path_str = "/Users/aniketsujay/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?.lua;/Users/aniketsujay/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?/init.lua;/Users/aniketsujay/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?.lua;/Users/aniketsujay/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/aniketsujay/.cache/nvim/packer_hererocks/2.1.1748459687/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,90 +76,115 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
+  },
+  ["barbar.nvim"] = {
+    loaded = true,
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["cmp-nvim-lua"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
     url = "https://github.com/hrsh7th/cmp-nvim-lua"
   },
   ["cmp-path"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/cmp-path",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
   cmp_luasnip = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["lazygit.nvim"] = {
     commands = { "LazyGit", "LazyGitConfig", "LazyGitCurrentFile", "LazyGitFilter", "LazyGitFilterCurrentFile" },
     loaded = false,
     needs_bufread = true,
     only_cond = false,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/opt/lazygit.nvim",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/opt/lazygit.nvim",
     url = "https://github.com/kdheepak/lazygit.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["oxocarbon.nvim"] = {
+    loaded = true,
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
     loaded = true,
-    path = "/home/asujay/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    path = "/Users/aniketsujay/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   }
 }
@@ -168,13 +193,6 @@ time([[Defining packer_plugins]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.api.nvim_create_user_command, 'LazyGit', function(cmdargs)
-          require('packer.load')({'lazygit.nvim'}, { cmd = 'LazyGit', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'lazygit.nvim'}, {}, _G.packer_plugins)
-          return vim.fn.getcompletion('LazyGit ', 'cmdline')
-      end})
 pcall(vim.api.nvim_create_user_command, 'LazyGitConfig', function(cmdargs)
           require('packer.load')({'lazygit.nvim'}, { cmd = 'LazyGitConfig', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
@@ -202,6 +220,13 @@ pcall(vim.api.nvim_create_user_command, 'LazyGitFilterCurrentFile', function(cmd
         {nargs = '*', range = true, bang = true, complete = function()
           require('packer.load')({'lazygit.nvim'}, {}, _G.packer_plugins)
           return vim.fn.getcompletion('LazyGitFilterCurrentFile ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'LazyGit', function(cmdargs)
+          require('packer.load')({'lazygit.nvim'}, { cmd = 'LazyGit', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'lazygit.nvim'}, {}, _G.packer_plugins)
+          return vim.fn.getcompletion('LazyGit ', 'cmdline')
       end})
 time([[Defining lazy-load commands]], false)
 

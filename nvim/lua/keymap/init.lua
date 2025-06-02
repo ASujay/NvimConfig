@@ -32,3 +32,13 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "200"
 
 vim.g.mapleader = ' '
+
+vim.api.nvim_create_autocmd("CursorHold", {
+    pattern = "*",
+    callback = function ()
+        vim.diagnostic.open_float(nil, {focusable = false})
+    end
+})
+
+vim.opt.fillchars:append({ eob = " " })
+
