@@ -88,10 +88,6 @@ require('packer').startup(function(use)
   	use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
     use "lukas-reineke/indent-blankline.nvim"
     use "rebelot/kanagawa.nvim"
-    -- These optional plugins should be loaded directly because of a bug in Packer lazy loading
-    use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
-    use 'romgrk/barbar.nvim'
-    use {'nyoom-engineering/oxocarbon.nvim'}
 end)
-vim.opt.background = "dark"
-vim.cmd("colorscheme oxocarbon")
+
+vim.cmd("colorscheme kanagawa-dragon")

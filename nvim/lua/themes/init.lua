@@ -1,1 +1,1 @@
--- require('tokyodark').setup()
+require('tokyodark').setup()
